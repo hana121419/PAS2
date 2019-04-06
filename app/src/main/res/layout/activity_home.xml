@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/first"
+    android:scrollbars="none"
+    tools:context=".HomeActivity">
+
+
+    <Button
+        android:id="@+id/cal"
+        android:layout_width="106dp"
+        android:layout_height="95dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:layout_marginBottom="79dp"
+        android:background="@android:drawable/checkbox_off_background"
+        android:foreground="@android:drawable/ic_menu_today"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toTopOf="@+id/textView26"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/liveV"
+        app:layout_constraintTop_toBottomOf="@+id/Settings" />
+
+    <Button
+        android:id="@+id/MCall"
+        android:layout_width="106dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/checkbox_off_background"
+        android:foreground="@android:drawable/ic_menu_call"
+        android:onClick="MCall"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toTopOf="@+id/textView24"
+        app:layout_constraintEnd_toStartOf="@+id/liveV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pphoto" />
+
+    <ImageView
+        android:id="@+id/Pphoto"
+        android:layout_width="112dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/toast_frame"
+        android:foreground="@android:drawable/ic_menu_my_calendar"
+        app:layout_constraintBottom_toTopOf="@+id/MCall"
+        app:layout_constraintEnd_toStartOf="@+id/Pname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Pname"
+        android:layout_width="169dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginBottom="32dp"
+        android:background="@android:drawable/toast_frame"
+        android:text="اسم المريض"
+        app:layout_constraintBottom_toTopOf="@+id/cal"
+        app:layout_constraintEnd_toStartOf="@+id/information"
+        app:layout_constraintStart_toEndOf="@+id/Pphoto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/information"
+        android:layout_width="58dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/ic_menu_info_details"
+        android:onClick="information"
+        app:layout_constraintBottom_toTopOf="@+id/Settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Pname"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Settings"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="40dp"
+        android:background="@android:drawable/ic_menu_manage"
+        android:onClick="Settings"
+        app:layout_constraintBottom_toTopOf="@+id/cal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@+id/Pname"
+        app:layout_constraintTop_toBottomOf="@+id/information" />
+
+    <Button
+        android:id="@+id/liveV"
+        android:layout_width="106dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/checkbox_off_background"
+        android:foreground="@android:drawable/ic_menu_slideshow"
+        android:onClick="LiveVedio"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toTopOf="@+id/textView25"
+        app:layout_constraintEnd_toStartOf="@+id/cal"
+        app:layout_constraintStart_toEndOf="@+id/MCall"
+        app:layout_constraintTop_toBottomOf="@+id/Pname"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/T"
+        android:layout_width="119dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="13dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        app:layout_constraintBottom_toTopOf="@+id/MList"
+        app:layout_constraintEnd_toStartOf="@+id/H"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/H"
+        android:layout_width="119dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="29dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        app:layout_constraintBottom_toTopOf="@+id/MList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/T"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TableLayout
+        android:id="@+id/MList"
+        android:layout_width="416dp"
+        android:layout_height="298dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/T"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="381dp"
+            android:layout_height="101dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="428dp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="381dp"
+            android:layout_height="98dp"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="649dp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="381dp"
+            android:layout_height="58dp"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="649dp" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="649dp" />
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="إتصال"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_light"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="265dp" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="مشاهدة الفديو"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_light"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="265dp" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
+        android:text="التقويم"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="265dp" />
+
+
+</android.support.constraint.ConstraintLayout>

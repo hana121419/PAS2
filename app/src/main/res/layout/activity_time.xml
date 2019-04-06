@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/first"
+    tools:context=".Time"
+    >
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="89dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="278dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="349dp"
+        android:background="@android:drawable/stat_notify_more"
+
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toEndOf="@+id/textT"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.678"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textT"
+        android:layout_width="206dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="368dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:inputType="date|textMultiLine|text|numberDecimal"
+        android:text="الادوية"
+        android:textEditPasteWindowLayout="@id/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,TextViewEdits" />
+
+
+</android.support.constraint.ConstraintLayout>
